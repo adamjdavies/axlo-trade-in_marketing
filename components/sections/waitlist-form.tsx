@@ -54,14 +54,10 @@ export function WaitlistForm() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
+                className="bg-white"
               />
             </div>
-            <Button
-              type="submit"
-              size="lg"
-              disabled={isSubmitting}
-              className="bg-blue-600 hover:bg-blue-700"
-            >
+            <Button type="submit" size="lg" disabled={isSubmitting}>
               {isSubmitting ? (
                 "Joining..."
               ) : (
